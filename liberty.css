@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.page-wrapper{
+    height: 100%;
+}
+.scroll{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+ }
+ .scroll span{
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 100%;
+    animation: kokab 30s infinite linear;
+ 
+ }
+ @keyframes kokab{
+    0%{
+        transform: translate(0,0)
+    }
+    100%{
+        transform: translate(-100%,0)
+    }
+ }
+.main{
+    margin-top: 4px;
+    height: 100%;
+    
+}
+.marque{
+    height: 44px;
+    background-color: #ed484c;
+}
+.toolbar {
+    justify-content: space-between;
+    font-size: 19px;
+    align-items: center;
+    background-color: #4c4c4c;
+    /* width: 60px; */
+    height: 60px;
+    display: flex;
+    color: #cacaca;
+    padding-left: 11px;
+    padding-right: 13px;
+
+}
+.col {
+    display: flex;
+}
+
+
+.toolbar img{
+    width: 77px;
+}
+.toolbar >div {
+    padding-left: 15px;
+}
+div.portfolio::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition: 0.5s;
+    border-radius: 20px;
+
+
+}
+div.portfolio:hover:after{
+    transform: scaleY(1);
+
+}
+
+div.service::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition: 0.5s;
+    border-radius: 20px;
+    color: red;
+
+
+}
+div.service:hover:after{
+    transform: scaleY(1);
+    color: red;
+
+}
+div.fontact::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition: 0.5s;
+    border-radius: 20px;
+
+
+}
+.col:hover{
+    color: rgb(238, 94, 94);
+}
+.col{
+    text-align: center;
+    width: 40%;
+}
+.col div{
+    text-align: center;
+}
+div.fontact:hover:after{
+    transform: scaleY(1);
+
+}
+.service{
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+
+    margin-left: auto;
+}
+.portfolio{
+    padding: 5px;
+
+    position: relative;
+    margin-right: 20px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.fontact{
+    padding: 5px;
+
+    position: relative;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+/* first section */
+.advance {
+    margin-top: 46px;
+    justify-content: center;
+    /* width: 40%; */
+    display: flex;
+} 
+a:before{
+    content: url(sadaf.jpg);
+    transform:scale(0.7,0.63);
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    top: 0.1px;
+    left: -100%;
+    background: rgb(139, 40, 40);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+
+}
+a:hover:before{
+    left: 100%;
+} 
+a{
+    height: 7%;
+    width: 14%;
+    position: absolute;
+    display: block;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#20ffea;
+    font-size: 24px;
+    font-family: 'Fjalla One', sans-serif;
+
+    letter-spacing: 2px;
+    font-weight: 20px;
+
+}
+a span:nth-child(odd)
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background:#20ffea;
+    transition: 0.5s ease-in-out;
+}
+span:nth-child(1)
+{
+   top: 0;
+   left: 50%; 
+}
+span:nth-child(3){
+    bottom: 0;
+    right: 50%;
+}
+a span:nth-child(even)
+{
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s ease-in-out;
+}
+span:nth-child(2)
+{
+   top: 50%;
+   left: 0; 
+}
+span:nth-child(4){
+    bottom: 50%;
+    right: 0;
+}
+a:hover span:nth-child(1)
+{
+   top: 0;
+   left: -50%; 
+}
+a:hover span:nth-child(3){
+    bottom: 0;
+    right: -50%;
+}
+a:hover span:nth-child(2)
+{
+   top: -50%;
+   left: 0; 
+}
+a:hover span:nth-child(4){
+    bottom: -50%;
+    right: 0;
+}
+
+.first-midpart{
+    
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    background-position: center;
+    color: white;
+    
+    background-color:#f18d97;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.center h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+}
+.center button{
+    margin-top: 20px;
+    width: 146px;
+    height: 45px;
+    border: none;
+    background-color: black;
+    color: #f18d97;
+    font-size: 21px;
+
+}
+
+.parah {
+    color: #20ffea;
+    
+    text-align: center;
+    width: 53%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    line-height: 1.3;
+}
+.second-bar{
+    height: auto;
+    width: 100%;
+    background-color: #efece7;
+    background-image: url(images2/floral.png);
+    background-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: black;
+    
+
+
+
+}
+.second-bar:hover .fa-css3-alt {
+    color:  rgb(33, 117, 243);
+    transition: 2s;
+}
+.second-bar:hover .fa-html5{
+    color: rgb(206, 136, 46);
+    transition: 1s;
+
+}
+.second-bar:hover .fa-js{
+    color: rgb(238, 241, 21);
+    transition: 0.5s;
+
+} 
+.icon{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon div {
+    width: 300px;
+    
+}
+@media screen and (max-width:1000px){
+    .icon{
+        flex-direction: column;
+        
+    }
+    .port-images > div{
+        flex-direction: column;
+    }
+    .port-images img{
+        width: 150px;
+    }
+
+}
+
+
+.our-service{
+    padding-top: 20px;
+    color: black;
+    grid-column: 1/-1;
+    
+}
+
+.third-part{
+    color: white;
+    background-image: url(new.jpg);
+    background-color:#ddceb4; 
+    background-size: 100%;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    padding: 20px;
+    box-sizing: border-box;
+    display flex;
+    height: auto;
+}
+.third-part .portfolio {
+    margin-top: 13px;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.port-images{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.port1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.port2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.port-images img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+.hover{
+    margin: 20px;
+}
+.task::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transition: 0.5s;
+    border-radius: 20px;
+
+
+}
+.task:hover:after{
+    transform: scaleY(1);
+
+}
+
+.task{
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+}
+.overlay{
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000de;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.overlay button {
+    color: white;
+    background-color: black;
+    border-radius: 100%;
+    border: 1px solid white;
+    padding: 15px;
+    margin: 4px;
+}
+.task:hover .overlay{
+    display: flex;
+    
+}
+.task:hover .fa-eye {
+    color:  rgb(250, 98, 123);
+    transition: 0.5s;
+}
+.task:hover .fa-thumbs-up {
+    color:  rgb(60, 95, 247);
+    transition: 0.5s;
+}
+.task:hover .fa-heart {
+    color:  rgb(233, 27, 27);
+    transition: 10s;
+}
+.fourth-part{
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    width: 100%;
+    height: 200px;
+    background-image: url(images2/floral.png);
+    background-color:#a8bfbe; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-evenly;
+
+
+}
+.contact button{
+    color:  black;
+    background-color:white;
+    border-radius: 100%;
+    border: 1px solid  black;
+    padding: 10px;
+    margin: 4px;
+}
+.contact button:hover{
+    background-color: black;
+    transition: 2s ;
+}
+i:hover.fa-twitter{
+    color: rgb(118, 201, 240);
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    padding-left: 4px;
+    padding: -5px;
+    padding-right: 4px;
+}
+i:hover.fa-facebook-f{
+    color: rgb(116, 114, 243);
+    cursor: pointer;
+}
+i:hover.fa-youtube{
+    color: red;
+}
+.footer {
+    font-family: 'Satisfy', cursive;
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer:hover{
+    font-size: 20px;
+}
+
+
+
+
+button:hover {
+    cursor: pointer;
+}
+
+.footer:hover .fa-heart {
+    color:  rgb(250, 98, 123);
+    transition: 1s;
+}
+.footer:hover #kok{
+    color: red;
+    transition: 1s;
+    font-size: 30px;
+}
+.footer:hover #ko1{
+    color: rgb(252, 217, 217);
+    transition: 2s;
+    font-size: 20px;
+}
+.footer:hover #ko2{
+    color:red;
+    transition: 3s;
+    font-size: 10px;
+}
+
+
+
+
