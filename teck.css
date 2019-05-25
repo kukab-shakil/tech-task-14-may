@@ -213,7 +213,7 @@ a:hover span:nth-child(4){
 } 
 
 .first-mid-part{
-    background-image: url(img.jpg);
+    background-image: url(images2/img24.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-repeat: repeat;
@@ -229,7 +229,7 @@ a:hover span:nth-child(4){
     align-items: center;
 }
 h1{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 50px;
 }
 .paragraph {
@@ -248,7 +248,8 @@ h1{
 }
 .button{
     height:20vh;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+
     background: #000;
     display: flex;
     justify-content: center;
@@ -269,7 +270,8 @@ a{
     text-transform: uppercase;
     text-decoration: none;
     font-size: 158%;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
     letter-spacing: 2px;
 
 }
@@ -507,11 +509,12 @@ a:hover span:nth-child(4){
 
 .third-part{
     color: white;
-    background-image: url(new.jpg);
+    background-image: url(images2/new-two.png);
     background-color:#ddceb4; 
     background-size: 100%;
     text-align: center;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Roboto', sans-serif;
+
     padding: 20px;
     box-sizing: border-box;
     display flex;
@@ -524,7 +527,8 @@ a:hover span:nth-child(4){
     border-top: 1px solid white;
 }
 .port-images{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -660,7 +664,7 @@ i:hover.fa-youtube{
     color: red;
 }
 .footer {
-    font-family: 'Satisfy', cursive;
+    font-family: 'Roboto', sans-serif;
     background-color: black;
     color: white;
     height: 50px;
